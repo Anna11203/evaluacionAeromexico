@@ -1,0 +1,239 @@
+.body {
+  width: 70%;
+  max-width: 1000px;
+  background-color: black;
+  background-image: url('../img/Background.svg');
+  margin: auto;
+  height: 100vh;
+}
+
+.contenedor {
+ margin: auto;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+ overflow: scroll;
+ height: 55vh;
+ width: 85%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.item-render {
+  background-color: white;
+  width: 35%;
+  height: 12vh;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  flex-direction: row;
+  display: flex;
+}
+
+.image-avatar {
+  width: 40%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-description {
+  background-color: white;
+  width: 60%;
+  height: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: left;
+  padding-left: 10px;
+  flex-direction: column;
+  display: flex;
+}
+
+.live {
+  color: #999999;
+  font-size: 8px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.dates {
+  margin-top: 1px;
+  font-size: 10px;
+  color: #374A59;
+}
+
+.text-filter {
+  font-size: 35px;
+  color: white;
+  margin-top: 10px;
+}
+
+.pin-favorites {
+  height: 9vh;
+  justify-content: right;
+  display: flex;
+}
+
+.pin-option-add {
+  background-color: #6B63B5;
+  width: 110px;
+  height: 30px;
+  margin-right: 10%;
+  color: white;
+  font-size: 12px;
+  border-bottom-right-radius: 6px;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+.pin-option-fav {
+  background-color: #6B63B5;
+  width: 110px;
+  height: 30px;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-bottom-left-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+.modal-stye {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between;
+}
+
+.input-form {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-variant: tabular-nums;
+  list-style: none;
+  font-feature-settings: 'tnum', "tnum";
+  width: 100%;
+  min-width: 0;
+  padding: 4px 11px;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  line-height: 1.5715;
+  background-color: rgba(38, 50, 56, 0.1);
+  background-image: none;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right: 0px;
+  border-bottom-width: 3px;
+  border-bottom-color: rgba(38, 50, 56, 0.20);
+  border-radius: 4px 4px 0 0;
+  transition: all 0.3s;
+  height: 40px;
+}
+
+.modal {
+  .ant-modal-content {
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%), 0 9px 28px 8px rgb(0 0 0 / 5%);
+    pointer-events: auto;
+  }
+
+  .ant-modal-header {
+    padding: 16px 24px;
+    color: rgba(0, 0, 0, 0.85);
+    background: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    border-radius: 10px 10px 0px 0px;
+  }
+}
+
+.button-save {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 4px solid #6B63B5;
+  line-height: 1.5715;
+  display: flex;
+  font-weight: 400;
+  white-space: nowrap;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
+  cursor: pointer;
+  height: 50px;
+  width: 150px;
+  color: white;
+  padding: 4px 15px;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 32%;
+}
+
+.buttons {
+  height: 12vh;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.buttons-style {
+  width: 250px;
+  height: 50px;
+  border-color: #6B63B5;
+  border-top-width: 90px;
+  border-width: 3px;
+  cursor: pointer;
+  color: white;
+  font-size: 17px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 3px solid #6B63B5;
+}
+
+.buttons-style:hover {
+  background-color: rgba(107, 99, 181, 0.6);
+}
+
+.button-normal {
+  background-color:rgba(0, 0, 0, 0.6);
+}
+
+.button-active {
+  background-color: #6B63B5;
+}
+
+.background-Gryffindor {
+  background: linear-gradient(135deg, #FF0000 0%, #FED482 100%);
+}
+
+.background-Slytherin {
+  background: linear-gradient(135deg, #1C792B 0%, #82E95E 100%); 
+}
+
+.background-Ravenclaw {
+  background: linear-gradient(135deg, #0597B7 0%, #66D1FF 100%);
+}
+
+.background-Hufflepuff {
+  background: linear-gradient(135deg, #FFC700 0%, #FFF388 100%);
+}
